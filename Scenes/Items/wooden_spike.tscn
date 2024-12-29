@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddnyljsspgd7r"]
+
+[ext_resource type="Texture2D" uid="uid://cmundcuefwsl6" path="res://Assets/Items/wooden_spike.tres" id="1_gmljk"]
+[ext_resource type="Script" path="res://Scenes/Items/WoodenSpike.gd" id="2_gvc78"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4n3kn"]
+size = Vector2(40, 126)
+
+[node name="WoodenSpike" type="Sprite2D"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+texture = ExtResource("1_gmljk")
+script = ExtResource("2_gvc78")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_4n3kn")

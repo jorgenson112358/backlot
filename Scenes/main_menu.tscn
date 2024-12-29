@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://djfr0yv82ywcu"]
+
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_bmc6f"]
+[ext_resource type="Texture2D" uid="uid://d0rcojcpfcmb2" path="res://Assets/General/Backgrounds/grayom-J2SqaNKGaHE-unsplash.jpg" id="2_ortmy"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_bmc6f")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 651.0
+texture = ExtResource("2_ortmy")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 19.0
+offset_top = 107.0
+offset_right = 1274.0
+offset_bottom = 244.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Backlot"
+horizontal_alignment = 1
+
+[node name="ButtonStart" type="Button" parent="."]
+offset_left = 339.0
+offset_top = 396.0
+offset_right = 435.0
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Start Game"
+
+[node name="ButtonQuit" type="Button" parent="."]
+offset_left = 889.0
+offset_top = 396.0
+offset_right = 992.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0.631373, 0.607843, 1, 1)
+theme_override_font_sizes/font_size = 45
+text = "Quit
+"
+
+[connection signal="pressed" from="ButtonStart" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="ButtonQuit" to="." method="_on_button_quit_pressed"]

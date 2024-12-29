@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://brdq7qh20s1kd"]
+
+[ext_resource type="Texture2D" uid="uid://b1qbqql8o7jvh" path="res://Assets/Items/SpikeTrapImage.png" id="1_xkwgi"]
+
+[resource]
+resource_name = "Skull"
+atlas = ExtResource("1_xkwgi")
+region = Rect2(23, 138, 30, 31)
